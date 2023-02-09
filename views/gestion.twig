@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link rel="stylesheet" href="./gestion.css">
+        <title>Gestion employé</title>
+        
+	</head>
+	<body>
+		<h1>Gestion employés</h1>
+
+
+
+
+		<div class='row '>
+			{% for employee in employees %}
+				<div class="card col-md-3 d-flex">
+					<div class="card-body">
+						<h5 class="card-title employee">
+
+						Nom : {{employee.name}}</h5>
+
+						Photo :<br><img src='./images/{{employee.photo}}'><br><br>
+						<p>Fonction : {{employee.function}}</p>
+						<p>Nombre de blâmes : {{employee.blame}}</p>
+						<br>
+						<br>
+                        <form action="/addBlame/{{employee.id}}" method="GET">
+                        <button type="submit" class="btn btn-danger">Ajouter un blâme</button>
+                        
+                        </form>
+						<a href="UpdateEmployee/{{employee.id}}">Update</a>
+						<a href="deleteEmployee/{{employee.id}}">Delete</a>
+					</div>
+				</div>
+
+			{% endfor %}
+
+            <br>
+            <br>
+            		<a href="/addemployee">
+			Créer nouvel employé ?</a>
+
+
+		</body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	</html>
+</body></html>

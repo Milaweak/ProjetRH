@@ -1,0 +1,21 @@
+
+body {
+    background: rgb(99,164,231);
+background: linear-gradient(90deg, rgba(99,164,231,0.48503151260504207) 0%, rgba(238,218,171,0.5466561624649859) 49%, rgba(221,69,55,0.5102415966386555) 100%);
+
+    color: rgb(25, 174, 197);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ a {
+   font-size: 25px;
+   color: rgb(44, 112, 171);
+
+}
+
+h1 {
+    display :flex ;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+}

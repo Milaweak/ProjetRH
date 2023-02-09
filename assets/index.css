@@ -1,0 +1,90 @@
+
+
+body {
+    background: rgb(99,164,231);
+background: linear-gradient(90deg, rgba(99,164,231,0.48503151260504207) 0%, rgba(238,218,171,0.5466561624649859) 49%, rgba(221,69,55,0.5102415966386555) 100%);
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(25, 174, 197);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+div {
+    margin-top: 200px;
+    display: block;
+    
+}
+
+
+a {
+    color: rgb(40, 55, 168);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+img {
+    width: 450px;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="password"]{
+    cursor:pointer;
+    border-radius: 15px;
+    border: solid #df3a08;
+   }
+
+   input[type="text"]{
+    cursor:pointer;
+    border-radius: 15px;
+    border: solid #58bad8;
+   }
+
+
+
+   
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
